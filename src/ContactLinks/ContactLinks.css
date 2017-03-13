@@ -1,0 +1,32 @@
+#contact-links {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#contact-links nav a {
+  display: inline-flex;
+  width: 3rem;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  border: .3rem solid #ba2640;
+  border-radius: 50%;
+  transition: background-color .4s;
+}
+
+#contact-links nav a svg {
+  fill: #ba2640;
+  width: 2rem;
+  height: 2rem;
+  transition: fill .4s;
+}
+
+#contact-links nav a:hover {
+  background-color: #ba2640;
+}
+
+#contact-links nav a:hover svg {
+  fill: #fff;
+}
