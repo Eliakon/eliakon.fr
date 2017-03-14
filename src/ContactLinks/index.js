@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import TiMail from 'react-icons/lib/ti/mail';
-import TiSocialGithub from 'react-icons/lib/ti/social-github';
 import TiSocialLinkedin from 'react-icons/lib/ti/social-linkedin';
+import FaGithubAlt from 'react-icons/lib/fa/github-alt';
 import './ContactLinks.css';
 
 // Mail, github, linkedin
@@ -11,7 +11,7 @@ const links = [
     href: 'mailto:estelle.eliakon@gmail.com'
   },
   {
-    icon: <TiSocialGithub />,
+    icon: <FaGithubAlt />,
     href: 'https://github.com/Eliakon'
   },
   {

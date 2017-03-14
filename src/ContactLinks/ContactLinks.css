@@ -20,7 +20,8 @@
   fill: #ba2640;
   width: 2rem;
   height: 2rem;
-  transition: fill .4s;
+  transition: fill, transform .4s, .4s;
+  transform: translateY(-.05rem);
 }
 
 #contact-links nav a:hover {
@@ -29,4 +30,5 @@
 
 #contact-links nav a:hover svg {
   fill: #fff;
+  transform: translateY(-.25rem);
 }

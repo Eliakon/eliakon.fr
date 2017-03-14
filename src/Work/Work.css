@@ -1,0 +1,83 @@
+#work-content {
+  background-color: #e6e6e6;
+  padding: 2rem;
+}
+
+#work-content h2 {
+  padding: 0 3rem;
+}
+
+#work-content .work-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+#work-content .work-item {
+  position: relative;
+  overflow: hidden;
+  width: 25rem;
+  height: 20rem;
+  margin: .5rem;
+}
+
+#work-content .work-item:hover {
+  cursor: pointer;
+}
+
+
+#work-content .work-item .work-thumbnail {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(1);
+  transition: filter, right .4s, .4s, .4s;
+}
+
+#work-content .work-item:hover .work-thumbnail {
+  filter: grayscale(0);
+  right: 1rem;
+}
+
+#work-content .work-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #c6c6c6;
+  opacity: .5;
+  transition: opacity .4s;
+}
+
+#work-content .work-item:hover .overlay {
+  opacity: 0;
+}
+
+#work-content .work-item .more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -5rem;
+  top: 0;
+  width: 5rem;
+  height: 100%;
+  background-color: #ba2640;
+  transition: right .4s;
+}
+
+#work-content .work-item .more svg {
+  width: 4rem;
+  height: 4rem;
+  fill: #fff;
+}
+
+#work-content .work-item:hover .more {
+  right: 0;
+}

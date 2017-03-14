@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Andika');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Andika', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 h1 {
+  display: flex;
+  align-items: flex-end;
   height: 4rem;
   color: #ba2640;
   background-color: #e6e6e6;
@@ -24,7 +26,7 @@ h2 {
   justify-content: center;
   flex-wrap: wrap;
   margin: 7rem auto;
-  max-width: 50rem;
+  max-width: 55rem;
 }
 
 #pokecenter {
@@ -39,13 +41,11 @@ h2 {
 }
 
 #presentation {
-  flex: 1;
+  flex: 0 0 35rem;
   margin-left: 2.5rem;
-
   font-size: 1.2rem;
 }
 
-#work {
-  background-color: #e6e6e6;
-  padding: 2rem 5rem;
+#presentation p {
+  line-height: 1.65rem;
 }
