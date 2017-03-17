@@ -2,59 +2,80 @@
 	"data":
 	[
 		{
+			"name": "meowmory",
 			"title": "Meowmory",
 			"thumbnail": "meowmory-presentation.png",
 			"skills": ["Game development", "Mobile development", "Unity3D", "Graphic design", "WebGL"],
 			"description": "Simple Memory game. Cats inside.",
 			"screens": ["meowmory-web-home.png", "meowmory-web-game.png", "meowmory-mobile-home.png", "meowmory-mobile-game.png", "meowmory-mobile-leaderboard.png"],
-			"links": [{"title": "Play", "url": "/Meowmory/"}]
+			"links": [{"title": "Play", "url": "/play/meowmory/"}],
+			"desktop": true,
+			"mobile": true
 		},
 		{
+			"name": "crazy8",
 			"title": "Crazy 8",
 			"thumbnail": "crazy8_splash.png",
 			"skills": ["Game development", "Mobile development", "Unity3D", "iOS development", "Android development"],
 			"description": "Crazy eights card game for iOS and Android. Play online with your friends!",
 			"screens": ["crazy8-1.jpg", "crazy8-2.jpg", "crazy8-3.jpg", "crazy8-4.jpg", "crazy8-5.jpg"],
-			"links": [{"title": "iTunes", "url": "https://itunes.apple.com/us/app/crazy-8-multiplayer/id1077318764?mt=8"}, {"title":"Play Store", "url":"https://play.google.com/store/apps/details?id=com.iscoolentertainment.crazy8&hl=en"}]
+			"links": [{"title": "iTunes", "url": "https://itunes.apple.com/us/app/crazy-8-multiplayer/id1077318764?mt=8"}, {"title":"Play Store", "url":"https://play.google.com/store/apps/details?id=com.iscoolentertainment.crazy8&hl=en"}],
+			"desktop": false,
+			"mobile": true
 		},
 		{
+			"name": "strawhatsadventure",
 			"title": "Straw Hat's Adventures",
 			"thumbnail": "straw1.png",
 			"skills": ["Game development", "Unity3D", "Graphic Design", "Pixel Art", "Game Design",  "Level Design"],
 			"description": "This is a game about a girl wearing a really nice hat. Created in 48 hours, for a Ludum Dare game jam.",
 			"screens": ["straw1.png", "straw2.png", "straw3.png"],
-			"links": [{"title": "Play", "url": "/LD36/"}]
+			"links": [{"title": "Play", "url": "/play/strawhatsadventure/"}],
+			"desktop": true,
+			"mobile": false
 		},
 		{
+			"name": "belote",
 			"title": "Belote Multiplayer",
 			"thumbnail": "belote_splash.png",
 			"skills": ["Game development", "Mobile development", "Unity3D", "iOS development", "Android development"],
 			"description": "Belote card game for iOS and Android. Play online with your friends!",
 			"screens": ["belote1.jpg", "belote2.jpg", "belote3.jpg", "belote4.jpg", "belote5.jpg"],
-			"links": [{"title": "iTunes", "url": "https://itunes.apple.com/us/app/belote-multiplayer-belote/id1023399449?mt=8"}, {"title":"Play Store", "url":"https://play.google.com/store/apps/details?id=com.iscoolentertainment.belote&hl=en"}]
+			"links": [{"title": "iTunes", "url": "https://itunes.apple.com/us/app/belote-multiplayer-belote/id1023399449?mt=8"}, {"title":"Play Store", "url":"https://play.google.com/store/apps/details?id=com.iscoolentertainment.belote&hl=en"}],
+			"desktop": false,
+			"mobile": true
 		},
 		{
+			"name": "lordofthedumbs",
 			"title": "Lord Of The Dumbs",
 			"thumbnail": "lotd_splash.jpg",
 			"skills": ["Game development", "Mobile development", "Javascript", "Appcelerator Titanium", "Lanica Platino", "iOS development"],
 			"description": "Battle card game for iOS. The player needs to save the world of Cretisium by completing quests, fighting stupid and/or badass bosses, collecting and evolving cards.",
 			"screens": ["lotd_splash.jpg", "lotd_home.jpg", "lotd_campaign.jpg", "lotd_boss.jpg", "lotd_pvp.jpg"],
-			"links": [{"title": "View website", "url": "http://www.lordofthedumbs.com/"}]
+			"links": [{"title": "View website", "url": "http://www.lordofthedumbs.com/"}],
+			"desktop": false,
+			"mobile": true
 		},
 		{
+			"name": "broadn",
 			"title": "Broadn",
 			"thumbnail": "broadn_intro.jpg",
 			"skills": ["Concept design", "Web development", "Javascript", "Backbone.js", "Processing.js", "HTML5/CSS3", "Python/Django", "API"],
 			"description": "Broadn is the new place to explore, discuss and share music with people. Discover music thanks to people, never algorithms. All the suggestions are made by the users and your friends so that it is much more relevant. Listen to tracks coming from services like Soundcloud, Youtube and Bandcamp. Broadn lets you collect the sounds you love and organize them. Add pictures, text, quotes, and create your very own collection.",
 			"screens": ["broadn_intro.jpg", "broadn_home.jpg", "broadn_search.jpg", "broadn_related.jpg"],
-			"links": [{"title": "View website", "url": "http://broadn.fm"}, {"title": "View trailer", "url": "https://vimeo.com/73280081"}]
+			"links": [{"title": "View website", "url": "http://broadn.alwaysdata.net"}, {"title": "View trailer", "url": "https://vimeo.com/73280081"}],
+			"desktop": true,
+			"mobile": false
 		},
 		{
+			"name": "ilarrive",
 			"title": "Il Arrive",
 			"thumbnail": "ilarrive_home.jpg",
 			"skills": ["Concept design", "Game and level design", "Game developement", "Java/LibGDX", "Mobile development", "Android development"],
 			"description": "Adaptation of Isaac Asimov's \"It's Coming\" short novel as a puzzle game for Android. The purpose is for the player to understand the main concepts that Asimov brought to science-fiction, and in particular the 3 laws of robotics.",
-			"screens": ["ilarrive_home.jpg", "ilarrive_xoom.jpg"]
+			"screens": ["ilarrive_home.jpg", "ilarrive_xoom.jpg"],
+			"desktop": false,
+			"mobile": true
 		}
 	]
 }

@@ -81,3 +81,28 @@
 #work-content .work-item:hover .more {
   right: 0;
 }
+
+#work-content .work-item .devices {
+  position: absolute;
+  display: flex;
+  top: .5rem;
+  left: .5rem;
+}
+
+#work-content .work-item .devices svg {
+  fill: #fff;
+  width: 2rem;
+  height: 2rem;
+  transition: transform .3s, opacity .3s;
+  transform: translateY(-.5rem);
+  opacity: 0;
+}
+
+#work-content .work-item .devices svg:nth-child(2) {
+  transition: transform .3s .1s, opacity .3s .1s;
+}
+
+#work-content .work-item:hover .devices svg {
+  transform: translateY(0);
+  opacity: 1;
+}

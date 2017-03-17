@@ -1,0 +1,43 @@
+#work .work-details {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+#work .work-details.visible {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity .3s, transform .05s;
+}
+
+#work .work-details:not(.visible) {
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity .3s, transform .05s .3s;
+}
+
+#work .work-details-content {
+  transition: transform .5s;
+}
+
+#work .work-details:not(.visible) .work-details-content {
+  transform: translateY(1rem);
+}
+
+#work .work-details.visible .work-details-content {
+  transform: translateY(0);
+}
+
+#work .work-details h2 {
+  margin: 2rem 0;
+}
+
+#work .work-details .screen {
+  height: 20rem;
+  background-size: cover;
+  background-position: 50%;
+}

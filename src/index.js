@@ -9,7 +9,6 @@ ReactDOM.render(
   document.getElementById('work')
 );
 
-
 ReactDOM.render(
   <ContactLinks />,
   document.getElementById('contact')
