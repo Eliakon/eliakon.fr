@@ -3,8 +3,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
+  height: 100%;
+  background-color: #fff;
   text-align: center;
 }
 
@@ -22,6 +22,7 @@
 
 #work .work-details-content {
   transition: transform .5s;
+  height: 100%;
 }
 
 #work .work-details:not(.visible) .work-details-content {
@@ -36,8 +37,69 @@
   margin: 2rem 0;
 }
 
+#work .work-details .screens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2.5rem;
+  height: calc(100% - 5rem);
+}
+
+#work .work-details .screens p {
+  flex: 0 0 20%;
+  color: #fff;
+  text-align: left;
+  font-size: 2rem;
+}
+
+#work .work-details .screens a {
+  position: relative;
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #fff;
+  opacity: .7;
+  transition: opacity .3s;
+}
+
+#work .work-details .screens a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: .2rem;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  transition: width .3s;
+}
+
+#work .work-details .screens a:hover {
+  opacity: 1;
+}
+
+#work .work-details .screens a:hover::after {
+  width: 100%;
+}
+
+#work .work-details .screens svg {
+  width: 1.3rem;
+  margin-right: 1rem;
+  opacity: .7;
+}
+
 #work .work-details .screen {
-  height: 20rem;
-  background-size: cover;
-  background-position: 50%;
+  flex: 1;
+  height: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 1rem;
+}
+
+#work .work-details .screen:nth-child(2) {
+  background-position: right;
+}
+
+#work .work-details .screen:last-child {
+  background-position: left;
 }
