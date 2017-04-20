@@ -39,7 +39,6 @@ class Work extends Component {
   }
 
   toWorkPage = ({ name }) => {
-    console.log('to work page', name);
     history.pushState(null, null, name);
     this.updateState();
   };

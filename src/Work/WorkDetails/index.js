@@ -32,7 +32,7 @@ const detailsContent = ({toHome}, project) => (
 
 const WorkDetails = props => (
   <div className={`work-details ${props.activeProject ? 'visible' : ''}`}>
-    {props.activeProject ? detailsContent(props, props.activeProject) : (props.lastActiveProject ? detailsContent(props, props.lastActiveProject) : null)}
+    {props.activeProject ? detailsContent(props, props.activeProject) : (props.lastActiveProject ? detailsContent(props, props.lastActiveProject) : <div className="work-details-content" />)}
   </div>
 );
 
