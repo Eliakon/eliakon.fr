@@ -37,6 +37,21 @@
   margin: 2rem 0;
 }
 
+#work .work-details .close {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+}
+
+#work .work-details .close:hover {
+  cursor: pointer;
+}
+
+#work .work-details .close svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 #work .work-details .screens {
   display: flex;
   justify-content: center;

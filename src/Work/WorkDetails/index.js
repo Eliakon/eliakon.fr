@@ -1,30 +1,18 @@
 import React from 'react';
 import GoLinkExternal from 'react-icons/lib/go/link-external';
+import MdClose from 'react-icons/lib/md/close';
 import './WorkDetails.css';
-
-const getScreens = (project, type) => {
-  if (type && project.type) {
-    return project.type;
-  }
-
-  if (project.mobile) {
-    return project.mobile;
-  }
-
-  if (project.desktop) {
-    return project.desktop;
-  }
-
-  return [];
-}
 
 const screen = (screen, i) => {
   return <div className="screen" key={`screen${i}`} style={{backgroundImage: `url("/images/screens/${screen}")`}} />
 };
 
-const detailsContent = project => (
+const detailsContent = ({toHome}, project) => (
   <div className="work-details-content">
     <h2 style={{color: project.color}}>{project.title}</h2>
+    <div className="close" onClick={toHome}>
+      <MdClose style={{fill: project.color}} />
+    </div>
     <div className="screens" style={{backgroundColor: project.color}}>
       <p>
         {project.description}
@@ -37,14 +25,14 @@ const detailsContent = project => (
           </div>
         ))}
       </p>
-      {getScreens(project).map(screen)}
+      {project.screens.map(screen)}
     </div>
   </div>
 );
 
 const WorkDetails = props => (
   <div className={`work-details ${props.activeProject ? 'visible' : ''}`}>
-    {props.activeProject ? detailsContent(props.activeProject) : (props.lastActiveProject ? detailsContent(props.lastActiveProject) : null)}
+    {props.activeProject ? detailsContent(props, props.activeProject) : (props.lastActiveProject ? detailsContent(props, props.lastActiveProject) : null)}
   </div>
 );
 

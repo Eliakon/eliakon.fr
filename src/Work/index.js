@@ -17,7 +17,7 @@ const WorkItem = props => (
   <div className="work-item" onClick={props.toDetails}>
     <div className="work-thumbnail" style={{backgroundImage: `url("/images/screens/${props.thumbnail}")`}} />
     <div className="overlay" />
-    <div className="more">
+    <div className="more" style={{backgroundColor: props.color}}>
       <MdNavigateNext />
     </div>
     <div className="devices">
@@ -39,6 +39,7 @@ class Work extends Component {
   }
 
   toWorkPage = ({ name }) => {
+    console.log('to work page', name);
     history.pushState(null, null, name);
     this.updateState();
   };
@@ -61,7 +62,7 @@ class Work extends Component {
           )}
         </div>
       </div>
-      <WorkDetails {...this.state} />
+      <WorkDetails {...this.state} toHome={() => this.toWorkPage({name: '/'})} />
     </div>
   )
 };

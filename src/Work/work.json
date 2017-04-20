@@ -7,9 +7,10 @@
 			"thumbnail": "meowmory-presentation.png",
 			"description": "Simple Memory game. Cats inside.",
 			"links": [{"title": "Play", "url": "/play/meowmory/"}],
-			"desktop": ["meowmory-d1.png", "meowmory-d2.png"],
-			"mobile": ["meowmory-m1.png", "meowmory-m2.png", "meowmory-m3.png"],
-			"color": "#5fd3bc"
+			"desktop": true,
+			"mobile": true,
+			"screens": ["meowmory-m1.png", "meowmory-m2.png", "meowmory-m3.png"],
+			"color": "#00aa88"
 		},
 		{
 			"name": "crazy8",
@@ -17,9 +18,10 @@
 			"thumbnail": "crazy8_splash.png",
 			"description": "Crazy eights card game for iOS and Android. Play online with your friends!",
 			"links": [{"title": "iTunes", "url": "https://itunes.apple.com/us/app/crazy-8-multiplayer/id1077318764?mt=8"}, {"title":"Play Store", "url":"https://play.google.com/store/apps/details?id=com.iscoolentertainment.crazy8&hl=en"}],
-			"desktop": null,
-			"mobile": ["crazy8-1.png", "crazy8-2.png", "crazy8-3.png"],
-			"color": "#f4e12f"
+			"desktop": false,
+			"mobile": true,
+			"screens": ["crazy8-1.png", "crazy8-2.png", "crazy8-3.png"],
+			"color": "#cd3d56"
 		},
 		{
 			"name": "strawhatsadventure",
@@ -27,9 +29,10 @@
 			"thumbnail": "straw1.png",
 			"description": "This is a game about a girl wearing a really nice hat. Created in 48 hours during Ludum Dare.",
 			"links": [{"title": "Play", "url": "/play/strawhatsadventure/"}],
-			"desktop": ["strawhat1.png", "strawhat2.png"],
-			"mobile": null,
-			"color": "#84c9ff"
+			"desktop": true,
+			"mobile": false,
+			"screens": ["strawhat1.png", "strawhat2.png"],
+			"color": "#ffcc00"
 		},
 		{
 			"name": "belote",
@@ -37,8 +40,9 @@
 			"thumbnail": "belote_splash.png",
 			"description": "Belote card game for iOS and Android. Play online with your friends!",
 			"links": [{"title": "iTunes", "url": "https://itunes.apple.com/us/app/belote-multiplayer-belote/id1023399449?mt=8"}, {"title":"Play Store", "url":"https://play.google.com/store/apps/details?id=com.iscoolentertainment.belote&hl=en"}],
-			"desktop": null,
-			"mobile": ["belote1.png", "belote2.png", "belote3.png"],
+			"desktop": false,
+			"mobile": true,
+			"screens": ["belote1.png", "belote2.png", "belote3.png"],
 			"color": "#204987"
 		},
 		{
@@ -47,9 +51,10 @@
 			"thumbnail": "lotd_splash.jpg",
 			"description": "Battle card game for iOS.",
 			"links": [{"title": "View website", "url": "http://www.lordofthedumbs.com/"}],
-			"desktop": null,
-			"mobile": ["lotd1.png", "lotd2.png", "lotd3.png"],
-			"color": "#fea501"
+			"desktop": false,
+			"mobile": true,
+			"screens": ["lotd1.png", "lotd2.png", "lotd3.png"],
+			"color": "#393a2c"
 		},
 		{
 			"name": "broadn",
@@ -57,8 +62,9 @@
 			"thumbnail": "broadn_intro.jpg",
 			"description": "Broadn is the new place to explore, discuss and share music with people.",
 			"links": [{"title": "View website", "url": "http://broadn.alwaysdata.net"}, {"title": "View trailer", "url": "https://vimeo.com/73280081"}],
-			"desktop": ["broadn1.png", "broadn2.png", "broadn3.png"],
-			"mobile": null,
+			"desktop":true,
+			"mobile": false,
+			"screens": ["broadn1.png", "broadn2.png", "broadn3.png"],
 			"color": "#1f5daa"
 		}
 	]
