@@ -1,10 +1,10 @@
-#contact-links {
+.contact-links {
   display: flex;
   align-items: center;
   margin-top: 2rem;
 }
 
-#contact-links nav a {
+.contact-links nav a {
   display: inline-flex;
   width: 3rem;
   height: 3rem;
@@ -16,7 +16,7 @@
   transition: background-color .4s;
 }
 
-#contact-links nav a svg {
+.contact-links nav a svg {
   fill: #ba2640;
   width: 2rem;
   height: 2rem;
@@ -24,11 +24,11 @@
   transform: translateY(-.05rem);
 }
 
-#contact-links nav a:hover {
+.contact-links nav a:hover {
   background-color: #ba2640;
 }
 
-#contact-links nav a:hover svg {
+.contact-links nav a:hover svg {
   fill: #fff;
   transform: translateY(-.25rem);
 }

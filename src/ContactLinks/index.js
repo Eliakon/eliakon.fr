@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import TiMail from 'react-icons/lib/ti/mail';
 import TiSocialLinkedin from 'react-icons/lib/ti/social-linkedin';
 import FaGithubAlt from 'react-icons/lib/fa/github-alt';
@@ -25,7 +25,7 @@ const SingleLink = props => (
 );
 
 const ContactLinks = props => (
-  <div id="contact-links">
+  <div className="contact-links">
     <span>Get in touch</span>
     <nav>
       {links.map((item, i) => <SingleLink key={`linkitem${i}`} {...item} />)}

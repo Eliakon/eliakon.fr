@@ -46,14 +46,14 @@ class Pikachu extends Component {
 
   render = () => (
     <div id="pikachu">
-      <img src="images/pikachu/shadow.png" />
+      <img src="images/pikachu/shadow.png" role="presentation" />
       <div className="pikachu-body">
-        <img className={`tale${this.state.moveTale ? ' move': ''}`} src="images/pikachu/tale.png" />
-        <img src="images/pikachu/left-ear.png" />
-        <img className={`ear${this.state.moveEar ? ' move': ''}`} src="images/pikachu/right-ear.png" />
-        <img src="images/pikachu/body.png" />
-        <img className={`eyes${this.state.blink ? ' blink': ''}`} src="images/pikachu/eyes.png" />
-        <img className={`sparkle${this.state.showSparkle ? ' show': ''}`} src="images/pikachu/sparkle.png" />
+        <img className={`tale${this.state.moveTale ? ' move': ''}`} src="images/pikachu/tale.png" role="presentation" />
+        <img src="images/pikachu/left-ear.png" role="presentation" />
+        <img className={`ear${this.state.moveEar ? ' move': ''}`} src="images/pikachu/right-ear.png" role="presentation" />
+        <img src="images/pikachu/body.png" role="presentation" />
+        <img className={`eyes${this.state.blink ? ' blink': ''}`} src="images/pikachu/eyes.png" role="presentation" />
+        <img className={`sparkle${this.state.showSparkle ? ' show': ''}`} src="images/pikachu/sparkle.png" role="presentation" />
       </div>
     </div>
   );

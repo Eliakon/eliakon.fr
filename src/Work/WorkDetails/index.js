@@ -17,9 +17,9 @@ const detailsContent = ({toHome}, project) => (
       <p>
         {project.description}
         {project.links.map((link, i) => (
-          <div>
+          <div key={`link${i}`}>
             <GoLinkExternal />
-            <a key={`link${i}`} href={link.url} target="blank">
+            <a href={link.url} target="blank">
               {link.title}
             </a>
           </div>
